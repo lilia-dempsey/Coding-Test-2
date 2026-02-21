@@ -36,8 +36,7 @@ void System::step() {
         double dx = uniform(-displacement, displacement);
         double dy = uniform(-displacement, displacement);
         this->disks[selected_disk].move(dx, dy);
-        
-        enforceBoundaries(disks[selected_disk]);
+        enforceboundaries(disks[selected_disk]);
 
         if (overlap(selected_disk)){
             disks[selected_disk].x = oldx;
@@ -46,7 +45,7 @@ void System::step() {
        
     }
 }
-void System::enforceBoundaries(Disk & disk) {
+void System::enforceboundaries(Disk & disk) {
         if (disk.x < 0) disk.x = 0;
         if (disk.x > boxSize) disk.x = boxSize;
         if (disk.y < 0) disk.y = 0;

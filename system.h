@@ -9,7 +9,7 @@
 #include "disk.h"
 
 class System {
-    public:
+public:
     System(int N, double displacement, double radius, double box_size, int seed);
 
     std::vector< Disk > disks;
