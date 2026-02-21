@@ -1,0 +1,8 @@
+.DS_Store
+*.o
+*.out
+*exe
+program
+venv/
+__pycache__/
+*.pyc
