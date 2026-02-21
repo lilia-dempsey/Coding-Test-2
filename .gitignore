@@ -6,3 +6,4 @@ program
 venv/
 __pycache__/
 *.pyc
+confs/
