@@ -5,17 +5,18 @@
 #include <random>
 #include <string>
 #include <cmath>
+#include <iostream>
 #include "disk.h"
 
 class System {
     public:
     System(int N, double displacement, double radius, double box_size, int seed);
 
-    std::vector< Disk > disks
-    double boxSize
-    double displacement
-    std::mt19937 gen
-    std::uniform_real_distribution< double > dist
+    std::vector< Disk > disks;
+    double boxSize;
+    double displacement;
+    std::mt19937 gen;
+    std::uniform_real_distribution< double > dist;
 
 
     void step();

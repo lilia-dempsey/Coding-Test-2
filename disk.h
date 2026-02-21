@@ -3,7 +3,7 @@
 
 class Disk {
     public:
-    Disk(double x, double y, double r)
+    Disk(double x, double y, double r);
     
     void move(double dx, double dy);
     
