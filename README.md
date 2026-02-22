@@ -15,6 +15,11 @@ g++ system.cpp disk.cpp main.cpp -o main
 Run code:
 ./main
 
+Compile code with Makefile:
+make
+Run code with Makefile:
+./program
+
 Git usage:
 - I created .gitignore straight away
 - I committed my code to git after each major edit with message of what i did

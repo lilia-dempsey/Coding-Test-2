@@ -4,3 +4,5 @@ SRC = main.cpp system.cpp disk.cpp
 EXEC = program
 all:
 	$(CC) $(CFLAGS) $(SRC) -o $(EXEC)
+clean:
+	rm -f $(EXEC)
