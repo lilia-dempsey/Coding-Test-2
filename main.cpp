@@ -19,7 +19,7 @@ int main() {
     System syst(N, maxDisplacement,dt,L,1234);
 
     // total number of iterations
-    int iterations = N*500;
+    int iterations = N*800;
 
     for (int i = 0; i < iterations; ++i) {
         // move one disk

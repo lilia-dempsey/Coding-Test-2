@@ -11,15 +11,15 @@ System::System(int N, double displacement,double radius, double boxSize, int see
         
         int nSide = static_cast<int>(boxSize/ (2*radius));
 
-        for (int i = 0; i < nSide && disks.size() < N; ++i) {
-            for (int j = 0; j < nSide && disks.size() < N; ++j) {
+        for (int i = 0; i < nSide && int(disks.size()) < N; ++i) {
+            for (int j = 0; j < nSide && int(disks.size()) < N; ++j) {
                 disks.push_back(Disk(i * 2*radius, j * 2*radius, radius));
             }
         }
     }   
 
 bool System::overlap(int i){
-    for (int j = 0; j < disks.size(); ++j) {
+    for (int j = 0; j < int(disks.size()); ++j) {
         if (i!=j && disks[i].distance(disks[j]) < (disks[i].radius + disks[j].radius) ) {
             return true;
         }
@@ -28,7 +28,7 @@ bool System::overlap(int i){
 }
 
 void System::step() {
-    for (size_t i=0; i<disks.size(); ++i) 
+    for (size_t i=0; i < disks.size(); ++i) 
     {
         int selected_disk = std::rand() % disks.size();
         double oldx = disks[selected_disk].x;

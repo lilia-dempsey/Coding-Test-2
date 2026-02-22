@@ -13,9 +13,9 @@ Steps:
 Compile code:
 g++ system.cpp disk.cpp main.cpp -o main
 Run code:
-/.main
+./main
 
 Git usage:
 - I created .gitignore straight away
 - I committed my code to git after each major edit with message of what i did
-- I originally started using git add . and git commit -m "Message" bu then I found the visual git repository section in vscode and found this was more efficient
+- I originally started using git add . and git commit -m "Message" but then I found the visual git repository section in vscode and found this was more efficient
