@@ -11,25 +11,23 @@ Steps:
 6. Neaten and improve if possible
 
 Compile code:
-- in bash:
-g++ system.cpp disk.cpp main.cpp -o main
+- in bash: g++ system.cpp disk.cpp main.cpp -o main
+
 Run code:
-- in bash:
-./main
+- in bash: ./main
 
 Compile code with Makefile:
-- in bash:
-make
+- in bash: make
+
 Run code with Makefile:
-- in bash:
-./program
+- in bash: ./program
 
 Git usage:
 - I created .gitignore straight away
 - I committed my code to git after each major edit with message of what i did
 - I originally started using git add . and git commit -m "Message" but then I found the visual git repository section in vscode and found this was more efficient
 
-Results and visualisation:
+Results:
 - the simualtion outputs frames into the folder confs
 - this is turned into an animation by running the code in view.py via bash with python3 view.py or running view.ipynb in Jupyter Notebook
 - the animation shows hard disks moving around randomly in a box with hard walls
